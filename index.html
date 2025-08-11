@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Video Player</title>
+</head>
+<body>
+
+  <h1>My Video Player</h1>
+  
+<script type="text/javascript">
+	atOptions = {
+		'key' : '77670abe8182fd8bdca4c662730b6991',
+		'format' : 'iframe',
+		'height' : 50,
+		'width' : 320,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//www.highperformanceformat.com/77670abe8182fd8bdca4c662730b6991/invoke.js"></script>
+
+  <!-- Video element -->
+  <video id="myVideo" width="1080 " height="1920" controls>
+    <source src="https://cdn.videy.co/a6iEMt1m1.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <br>
+
+  <!-- JavaScript Buttons -->
+  <button onclick="playVideo()">Play</button>
+  <button onclick="pauseVideo()">Pause</button>
+
+  <script>
+    const video = document.getElementById('myVideo');
+
+    function playVideo() {
+      video.play();
+    }
+
+    function pauseVideo() {
+      video.pause();
+    }
+  </script>
+
+</body>
+</html>
